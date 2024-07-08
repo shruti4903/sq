@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            animation-name: sq;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sq {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: blueviolet;
+                top: 0;
+                left: 400px;
+                border-radius: 50%;
+            }
+
+            50% {
+                background-color: yellow;
+                top: 400px;
+                left: 400px;
+                border-radius: 0%;
+            }
+
+            75% {
+                background-color: crimson;
+                top: 400px;
+                left: 0;
+                border-radius: 50%;
+            }
+
+            100% {
+                background-color: midnightblue;
+                top: 0;
+                left: 0;
+                border-radius: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p1"></div>
+
+</body>
+
+</html>
